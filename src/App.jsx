@@ -38,8 +38,7 @@ function App() {
       setLoading(true)
       setReview("Analyzing your code... ⏳")
 
-      const response = await axios.post(
-        "https://your-app-name.onrender.com/ai/get-review",
+      const response = await axios.post("https://codereviewerbackend-q8mn.onrender.com/ai/get-review",
         { code }
       )
 
